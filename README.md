@@ -1,5 +1,5 @@
 # Cubo Movible 3D con JavaScript
-
+<img src="https://i.ibb.co/Ld1CDtV/cubo4.jpg" alt="cubo4" border="0" >
 Este proyecto demuestra cómo crear un cubo 3D que se puede mover usando eventos de ratón en JavaScript, HTML y CSS.
 
 ## Descripción
