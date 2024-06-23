@@ -1,0 +1,57 @@
+/* Estilos para el cuerpo de la página */
+body {
+    margin: 0; /* Elimina márgenes */
+    height: 100vh; /* Altura del 100% de la ventana */
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #f0f0f0; /* Color de fondo */
+    user-select: none; /* Desactiva la selección de texto en todo el cuerpo */
+}
+
+/* Contenedor de la escena 3D */
+.scene {
+    width: 200px; /* Ancho de la escena */
+    height: 200px; /* Altura de la escena */
+    perspective: 600px; /* Perspectiva para el efecto 3D */
+}
+
+/* Estilos para el cubo */
+.cube {
+    width: 100px; /* Ancho del cubo */
+    height: 100px; /* Altura del cubo */
+    position: relative; /* Posiciona relativamente para contener las caras */
+    transform-style: preserve-3d; /* Mantiene el efecto 3D */
+    transform: rotateX(0deg) rotateY(0deg); /* Rotación inicial */
+    transition: transform 0.5s; /* Transición suave para las transformaciones */
+    cursor: grab; /* Cursor de mano abierta */
+}
+
+/* Cambia el cursor cuando se está arrastrando */
+.cube:active {
+    cursor: grabbing; /* Cursor de mano cerrada */
+}
+
+/* Estilos comunes para cada cara del cubo */
+.face {
+    position: absolute; /* Posiciona absolutamente dentro del cubo */
+    width: 100px; /* Ancho de cada cara */
+    height: 100px; /* Altura de cada cara */
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border: 1px solid #ccc; /* Borde */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 100px; /* Centra el texto verticalmente */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Familia de la fuente */
+    color: #333; /* Color del texto */
+   /*  user-select: none */; /* Desactiva la selección de texto */
+}
+
+/* Transformaciones para posicionar cada cara del cubo */
+.front  { transform: rotateY(  0deg) translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.right  { transform: rotateY( 90deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.top    { transform: rotateX( 90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
