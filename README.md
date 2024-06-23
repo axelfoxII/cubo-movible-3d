@@ -11,7 +11,7 @@ El objetivo de este proyecto es mostrar un cubo 3D en la página web que se pued
 El proyecto consta de los siguientes archivos:
 
 - `index.html`: Contiene la estructura HTML básica.
-- `styles.css`: Define el estilo del cubo y la perspectiva 3D.
+- `estilo.css`: Define el estilo del cubo y la perspectiva 3D.
 - `script.js`: Contiene el código JavaScript para manejar la rotación del cubo.
 
 ## Instrucciones
